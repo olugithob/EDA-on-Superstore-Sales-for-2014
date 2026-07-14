@@ -24,8 +24,28 @@ Data Cleaning: Checked for duplicates, missing values, and corrected incorrect d
 Data Exploration: Analyzed total sales, category-wise sales trends, and seasonal variations.
 Data Visualization: Created charts to track sales patterns.
 
-## Analysis Findings
+## Data Processing and Analysis:
+Using Python Jupyter Notebook, I wrote python codes during EDAs,raised and answered 5 business questions, created charts to cisualize and check patterns on the various revenue drivers. Here's the full python [code](https://github.com/olugithob/EDA-on-Superstore-Sales-for-2014/blob/main/Superstore%20Sales%202014.ipynb).
 
+Here are 5 business questions raised for analysis:
+- What is the total revenue generated?
+- What is the total number of sales made?
+- Which product is the top selling product?
+- In which month is the number of sales the highest?
+- In which month is the number of sales the lowest?
+
+```python
+#Calculate Total Sales and Total Quantity Sold.
+
+total_sales = np.sum(df['Sales'])  # Total Sales
+
+print(f'Total Sales: {total_sales}')
+
+total_quantity = np.sum(df['Quantity'])     # Total Quantity
+
+print(f'Total Quantity: {total_quantity}')
+```
+## Analysis Findings
 KPIs
 Total Sales: 484,247
 Total Quantity: 7,581
